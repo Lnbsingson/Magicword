@@ -9,7 +9,10 @@ const MagicWord = {
         x[i]=Math.floor(Math.random()*4)
         }
         return x
+    },
+    GetWords(arr){
+        console.log(this.SMate1[arr[0]]+' '+this.SMate2[arr[1]]+' '+this.SMate3[arr[2]])
     }
 }
 
-console.log(MagicWord.GetRandomNums())
+MagicWord.GetWords(MagicWord.GetRandomNums())
